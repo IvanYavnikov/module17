@@ -5,53 +5,61 @@ describe("test getMonth", () => {
       const result = getMonth(1);
       expect(result).toBe('январь');
     }),
-      it("multiply 1 * 1 to equal 1", () => {
+      it("getMonth 2 to equal 'февраль'", () => {
         const result = getMonth(2);
         expect(result).toBe('февраль');
       });
-      it("multiply 1 * 1 to equal 1", () => {
+      it("getMonth 3 to equal 'март'", () => {
         const result = getMonth(3);
         expect(result).toBe('март');
       });
-      it("multiply 1 * 1 to equal 1", () => {
+      it("getMonth 4 to equal 'апрель'", () => {
         const result = getMonth(4);
         expect(result).toBe('апрель');
       });
-      it("multiply 1 * 1 to equal 1", () => {
+      it("getMonth 5 to equal 'май'", () => {
         const result = getMonth(5);
         expect(result).toBe('май');
       });
-      it("multiply 1 * 1 to equal 1", () => {
+      it("getMonth 6 to equal 'июнь'", () => {
         const result = getMonth(6);
         expect(result).toBe('июнь');
       });
-      it("multiply 1 * 1 to equal 1", () => {
+      it("getMonth 7 to equal 'июль'", () => {
         const result = getMonth(7);
         expect(result).toBe('июль');
       });
-      it("multiply 1 * 1 to equal 1", () => {
+      it("getMonth 8 to equal 'август'", () => {
         const result = getMonth(8);
         expect(result).toBe('август');
       });
-      it("multiply 1 * 1 to equal 1", () => {
+      it("getMonth 9 to equal 'сентябрь'", () => {
         const result = getMonth(9);
         expect(result).toBe('сентябрь');
       });
-      it("multiply 1 * 1 to equal 1", () => {
+      it("getMonth 10 to equal 'октябрь'", () => {
         const result = getMonth(10);
         expect(result).toBe('октябрь');
       });
-      it("multiply 1 * 1 to equal 1", () => {
+      it("getMonth 11 to equal 'ноябрь'", () => {
         const result = getMonth(11);
         expect(result).toBe('ноябрь');
       });
-      it("multiply 1 * 1 to equal 1", () => {
+      it("getMonth 12 to equal 'декабрь'", () => {
         const result = getMonth(12);
         expect(result).toBe('декабрь');
       });
-      it("multiply 1 * 1 to equal 1", () => {
-        const result = getMonth(0);
+      it("getMonth  to equal 'неизвестно'", () => {
+        const result = getMonth(0) || getMonth(string) || getMonth(15-100);
         expect(result).toBe('неизвестно');
       });
   });
+
+
+  describe("test getMonth", () => {
+    it('getMonth length', () => {
+      const result = [getMonth(1), getMonth(2), getMonth(3), getMonth(4), getMonth(5), getMonth(6), getMonth(7), getMonth(8), getMonth(9), getMonth(10), getMonth(11), getMonth(12), getMonth(13)];
+        expect(result.length).toBe(12);
+    })
+  })
 

@@ -14,4 +14,6 @@ export function getMonth(n) {
   return 'неизвестно';
 }
 
-alert( getMonth(3) )
+/*let n = +prompt('Введите номер месяца');*/
+
+/*getMonth(`${n}`)*/
