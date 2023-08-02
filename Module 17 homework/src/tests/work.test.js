@@ -58,7 +58,7 @@ describe("test getMonth", () => {
 
   describe("test getMonth", () => {
     it('getMonth length', () => {
-      const result = [getMonth(1), getMonth(2), getMonth(3), getMonth(4), getMonth(5), getMonth(6), getMonth(7), getMonth(8), getMonth(9), getMonth(10), getMonth(11), getMonth(12), getMonth(13)];
+      const result = [getMonth(1), getMonth(2), getMonth(3), getMonth(4), getMonth(5), getMonth(6), getMonth(7), getMonth(8), getMonth(9), getMonth(10), getMonth(11), getMonth(12)];
         expect(result.length).toBe(12);
     })
   })
